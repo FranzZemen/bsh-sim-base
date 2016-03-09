@@ -1,0 +1,22 @@
+{
+  "name": "bsh-sim-base",
+  "version": "0.0.1",
+  "description": "Base REST simulator",
+  "main": "app/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FranzZemen/bsh-sim-base.git"
+  },
+  "author": "Franz Zemen <franzzemen@gmail.com> (https://www.linkedin.com/pub/franz-zemen/0/2b5/105)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FranzZemen/bsh-sim-base/issues"
+  },
+  "homepage": "https://github.com/FranzZemen/bsh-sim-base#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
