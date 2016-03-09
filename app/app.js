@@ -34,14 +34,14 @@ if (cluster.isMaster) {
 // For full secure options See https://nodejs.org/dist/latest-v4.x/docs/api/tls.html#tls_tls_createserver_options_secureconnectionlistener
 
    const options = {
-   key : fs.readFileSync('path/to/key.pem'),
-   cert: fs.readFileSync('path/to/cert.pem'),
+   key : fs.readFileSync('./kwrd.key'),
+   cert: fs.readFileSync('./kwrd.pem'),
 
    // This is necessary only if using the client certificate authentication.
    requestCert: true,
 
    // This is necessary only if the client uses the self-signed certificate.
-   ca: [fs.readFileSync('path/to/client-cert.pem')]
+   ca: [fs.readFileSync('./cacert.pem')]
    };
 
 // OR
@@ -62,7 +62,7 @@ if (cluster.isMaster) {
    httpsServer.listen(securePort, function () {
    console.log('https server listening on port ' + securePort);
    });
-  
+
 }
 
 
